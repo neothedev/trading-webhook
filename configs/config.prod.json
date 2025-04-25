@@ -1,0 +1,6 @@
+{
+  "port": ":8080",
+  "logLevel": "info",
+  "timezone": "America/New_York",
+  "webhookPath": "/webhook"
+}

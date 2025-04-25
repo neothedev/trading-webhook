@@ -1,0 +1,6 @@
+{
+  "port": ":3000",
+  "logLevel": "debug",
+  "timezone": "America/New_York",
+  "webhookPath": "/webhook"
+}
