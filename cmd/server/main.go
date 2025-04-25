@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"os"
 
-	"../../configs"
-	"../../routes"
+	"github.com/neothedev/trading-webhook/configs"
+	"github.com/neothedev/trading-webhook/routes"
 )
 
 func main() {

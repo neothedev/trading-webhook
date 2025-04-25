@@ -5,14 +5,14 @@ import (
 	"log"
 	"time"
 
-	"../models"
+	"github.com/neothedev/trading-webhook/models"
 )
 
 func ProcessAlert(payload models.AlertPayload) (string, error) {
 	t := time.UnixMilli(payload.BarTime)
 	loc, err := time.LoadLocation("America/New_York")
 	if err != nil {
-		return "", fmt.Errorf("Could not load time zone")
+		return "", fmt.Errorf("could not load time zone")
 	}
 	tInEST := t.In(loc)
 	formattedTime := tInEST.Format("2006-01-02 03:04:05.000 PM MST")

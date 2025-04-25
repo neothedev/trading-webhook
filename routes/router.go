@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"../controllers"
+	"github.com/neothedev/trading-webhook/controllers"
 )
 
 func NewRouter() *http.ServeMux {

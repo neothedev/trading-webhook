@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"../models"
-	"../services"
+	"github.com/neothedev/trading-webhook/models"
+	"github.com/neothedev/trading-webhook/services"
 )
 
 func WebhookHandler(w http.ResponseWriter, r *http.Request) {
