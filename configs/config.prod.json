@@ -2,5 +2,18 @@
   "port": ":8080",
   "logLevel": "info",
   "timezone": "America/New_York",
-  "webhookPath": "/webhook"
+  "webhookPath": "/webhook",
+  "TradeStationBaseURL": "https://api.tradestation.com",
+  "TradeStationAPIRoot": "/v3",
+  "TradeStationEndpoints": {
+    "Accounts": "/brokerage/accounts",
+    "Balances": "/brokerage/accounts/%s/balances",
+    "Positions": "/brokerage/accounts/%s/positions",
+    "Orders": "/brokerage/accounts/%s/orders",
+    "Quote": "/marketdata/quotes/%s",
+    "BarChart": "/marketdata/barcharts/%s",
+    "OptionChain": "/marketdata/options/chains/%s",
+    "OptionQuotes": "/marketdata/options/quotes/%s",
+    "MarketDepth": "/marketdata/marketdepth/%s"
+  }
 }
